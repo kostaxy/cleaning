@@ -1,49 +1,12 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
-import LogoCompany from './LogoCompany'
-
-const HeaderWrapper = styled.header`
-    background-color: var(--background-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-`
-
-const Nav = styled.nav`
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-        gap: 1rem;
-    }
-`
-
-const Logo = styled(Link)`
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
-`
-
-const NavLinks = styled.div`
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-
-    @media (max-width: 768px) {
-        gap: 1rem;
-    }
-`
+import LogoCompany from '../LogoCompany'
+import styles from './Header.module.css'
 
 const NavLink = styled(Link)`
-    color: var(--text-color);
+    color: ${(props) =>
+        props.$active ? 'var(--primary-color)' : 'var(--text-color)'};
     text-decoration: none;
     font-weight: ${(props) => (props.$active ? '600' : '400')};
 
@@ -56,10 +19,10 @@ function Header() {
     const location = useLocation()
 
     return (
-        <HeaderWrapper>
-            <Nav>
+        <header className={styles.HeaderWrapper}>
+            <nav className={styles.Nav}>
                 <LogoCompany />
-                <NavLinks>
+                <div className={styles.NavLinks}>
                     <NavLink to="/" $active={location.pathname === '/'}>
                         О компании
                     </NavLink>
@@ -75,9 +38,9 @@ function Header() {
                     >
                         Контакты
                     </NavLink>
-                </NavLinks>
-            </Nav>
-        </HeaderWrapper>
+                </div>
+            </nav>
+        </header>
     )
 }
 

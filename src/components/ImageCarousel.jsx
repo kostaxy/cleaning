@@ -51,19 +51,19 @@ const Image = styled.img`
 
 const carouselImages = [
     {
-        url: 'https://images.unsplash.com/photo-1527581849771-416a9d62308e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        url: 'https://images.unsplash.com/photo-1686178827149-6d55c72d81df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         alt: 'Car detailing process',
     },
     {
-        url: 'https://images.unsplash.com/photo-1680893816982-48a3deeab0db?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        url: 'https://images.unsplash.com/photo-1643216670147-f9a901d3133d?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         alt: 'Interior cleaning',
     },
     {
-        url: 'https://images.unsplash.com/photo-1708805282695-ef186db20192?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        url: 'https://images.unsplash.com/photo-1626379481874-3dc5678fa8ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         alt: 'Exterior washing',
     },
     {
-        url: 'https://images.unsplash.com/photo-1552930294-49fc7457c1ce?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        url: 'https://images.unsplash.com/photo-1687840936382-7333b7d26fca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg3fHxwcm9mZXNzaW9uYWwlMjBjbGVhbmluZ3xlbnwwfHwwfHx8Mg%3D%3D',
         alt: 'Professional polishing',
     },
 ]

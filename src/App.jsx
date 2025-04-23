@@ -7,11 +7,11 @@ import {
     HashRouter,
 } from 'react-router-dom'
 import styled, { ThemeProvider } from 'styled-components'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import About from './pages/About'
-import Pricing from './pages/Pricing'
-import Contacts from './pages/Contacts'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import About from './pages/About/About'
+import Pricing from './pages/Pricing/Pricing'
+import Contacts from './pages/Contacts/Contacts'
 
 const AppWrapper = styled.div`
     min-height: 100vh;

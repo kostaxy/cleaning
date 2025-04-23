@@ -1,0 +1,54 @@
+.FooterWrapper {
+    background-color: var(--background-color-secondary);
+    padding: 1.5rem 0;
+    margin-top: auto;
+    border-top: 1px solid var(--gray-medium);
+}
+
+.FooterContent {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.ContactLink {
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease;
+    font-size: 0.9rem;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.SocialLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.SocialLink {
+    color: var(--text-color-secondary);
+    font-size: 1.2rem;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+
+    &:hover {
+        color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+}

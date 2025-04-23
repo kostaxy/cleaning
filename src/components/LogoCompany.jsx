@@ -17,39 +17,6 @@ const LogoWrapper = styled(Link)`
     }
 `
 
-const LogoIcon = styled.div`
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--background-color);
-    font-size: 1.2rem;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.2s ease;
-    box-shadow: 0 0 20px rgba(77, 133, 255, 0.3);
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: -20%;
-        width: 140%;
-        height: 1px;
-        background: rgba(255, 255, 255, 0.8);
-        transform: rotate(-45deg);
-    }
-
-    ${LogoWrapper}:hover & {
-        background: var(--secondary-color);
-        transform: rotate(-5deg);
-        box-shadow: 0 0 25px rgba(107, 154, 255, 0.4);
-    }
-`
-
 const LogoText = styled.span`
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;

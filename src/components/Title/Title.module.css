@@ -1,0 +1,18 @@
+.Title {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+    color: var(--text-color);
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: var(--primary-color);
+    }
+}
