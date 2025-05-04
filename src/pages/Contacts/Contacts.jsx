@@ -45,14 +45,14 @@ function Contacts() {
                                 </a>
                             </div>
                             <div className={styles.SocialLinks}>
-                                <a
+                                {/* <a
                                     className={styles.SocialLink}
                                     href={`${CONST_INFO.links.vk.url}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     <FaVk />
-                                </a>
+                                </a> */}
                                 <a
                                     className={styles.SocialLink}
                                     href={`${CONST_INFO.links.instagram.url}`}
@@ -71,7 +71,7 @@ function Contacts() {
                                 </a>
                                 <a
                                     className={styles.SocialLink}
-                                    href={`${CONST_INFO.links.whatsapp.url}`}
+                                    href={`${CONST_INFO.links.viber.url}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
