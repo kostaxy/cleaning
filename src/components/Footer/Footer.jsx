@@ -1,12 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
 import {
     FaInstagram,
     FaTelegram,
-    FaWhatsapp,
     FaPhone,
     FaEnvelope,
     FaVk,
+    FaViber,
 } from 'react-icons/fa'
 import { CONST_INFO } from '../../constants/constantsInfo'
 import styles from './Footer.module.css'
@@ -60,7 +59,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaWhatsapp />
+                        <FaViber />
                     </a>
                 </div>
             </div>

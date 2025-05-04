@@ -1,13 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Helmet } from 'react-helmet'
 import {
     FaInstagram,
-    FaWhatsapp,
     FaTelegram,
     FaVk,
     FaPhone,
     FaEnvelope,
+    FaViber,
 } from 'react-icons/fa'
 import { CONST_INFO } from '../../constants/constantsInfo'
 import PageWrapper from '../../components/PageWrapper/PageWrapper'
@@ -20,7 +19,7 @@ function Contacts() {
     return (
         <>
             <Helmet>
-                <title>Контакты | ЧистоДом</title>
+                <title>Контакты | Leo </title>
                 <meta
                     name="description"
                     content="Свяжитесь с нами для заказа услуг по уборке квартир. Мы всегда на связи!"
@@ -76,7 +75,7 @@ function Contacts() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <FaWhatsapp />
+                                    <FaViber />
                                 </a>
                             </div>
                         </div>

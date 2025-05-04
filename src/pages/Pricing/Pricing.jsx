@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Helmet } from 'react-helmet'
 import { PRICES } from '../../constants/prices'
 import PageWrapper from '../../components/PageWrapper/PageWrapper'
@@ -12,7 +11,7 @@ function Pricing() {
     return (
         <>
             <Helmet>
-                <title>Цены на уборку | ЧистоДом</title>
+                <title>Цены на уборку | Leo </title>
                 <meta
                     name="description"
                     content="Цены на профессиональную уборку квартир в Гомеле. Генеральная уборка, химчистка мебели, регулярная уборка и другие услуги."
@@ -23,6 +22,19 @@ function Pricing() {
                     <HeaderTitle>
                         <Title>Наши цены</Title>
                     </HeaderTitle>
+
+                    <div className={styles.PromotionalBanner}>
+                        <div className={styles.BannerContent}>
+                            <h2>Лучшая цена гарантирована!</h2>
+                            <p>
+                                Нашли дешевле? Мы сделаем ещё выгоднее!
+                                <br />
+                                <span className={styles.Highlight}>
+                                    Снижаем цену на 10% от разницы
+                                </span>
+                            </p>
+                        </div>
+                    </div>
 
                     <p className={styles.InfoText}>
                         Мы предлагаем гибкую систему ценообразования в

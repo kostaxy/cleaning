@@ -1,5 +1,12 @@
 import React from 'react'
-import { FaBroom, FaHandSparkles, FaClock, FaShieldAlt } from 'react-icons/fa'
+import {
+    FaBroom,
+    FaHandSparkles,
+    FaClock,
+    FaShieldAlt,
+    FaTint,
+    FaGlassCheers,
+} from 'react-icons/fa'
 import { Helmet } from 'react-helmet'
 import ImageCarousel from '../../components/ImageCarousel'
 import PageWrapper from '../../components/PageWrapper/PageWrapper'
@@ -13,10 +20,10 @@ function About() {
     return (
         <>
             <Helmet>
-                <title>О компании | АвтоЧистка</title>
+                <title>О компании | Leo </title>
                 <meta
                     name="description"
-                    content="Профессиональная чистка автомобилей в Москве. Качественные услуги мойки и детейлинга от опытных специалистов."
+                    content="Профессиональная чистка квартир в Гомеле. Генеральная уборка, химчистка мебели, регулярная уборка и другие услуги."
                 />
             </Helmet>
             <PageWrapper>
@@ -28,13 +35,12 @@ function About() {
                         <div className={styles.TextBlock}>
                             <h2>О компании</h2>
                             <p style={{ textAlign: 'justify' }}>
-                                <b>Huechistka</b> - это профессиональная
-                                клининговая компания в Гомеле,
-                                специализирующаяся на уборке квартир. Мы
-                                предлагаем широкий спектр услуг по поддержанию
-                                чистоты в вашем доме, используя современное
-                                оборудование и экологически безопасные моющие
-                                средства.
+                                <b>LEO</b> - это профессиональная клининговая
+                                компания в Гомеле, специализирующаяся на уборке
+                                квартир. Мы предлагаем широкий спектр услуг по
+                                поддержанию чистоты в вашем доме, используя
+                                современное оборудование и экологически
+                                безопасные моющие средства.
                             </p>
                         </div>
                     </div>
@@ -119,6 +125,30 @@ function About() {
                                 Тщательная уборка после ремонта, включая
                                 удаление строительной пыли и остатков
                                 материалов.
+                            </p>
+                        </div>
+                        <div className={styles.ServiceCard}>
+                            <div className={styles.ServiceIcon}>
+                                <FaTint />
+                            </div>
+                            <h3 className={styles.ServiceTitle}>Мойка окон</h3>
+                            <p className={styles.ServiceDescription}>
+                                Профессиональная чистка окон с применением
+                                специализированного оборудования, обеспечивающая
+                                прозрачность и чистоту без разводов.
+                            </p>
+                        </div>
+                        <div className={styles.ServiceCard}>
+                            <div className={styles.ServiceIcon}>
+                                <FaGlassCheers />
+                            </div>
+                            <h3 className={styles.ServiceTitle}>
+                                Уборка после праздников
+                            </h3>
+                            <p className={styles.ServiceDescription}>
+                                Комплексная уборка после праздничных
+                                мероприятий, включая уборку мусора, мытье посуды
+                                и приведение помещения в порядок.
                             </p>
                         </div>
                     </div>

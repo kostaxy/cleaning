@@ -28,7 +28,7 @@ const LogoText = styled.span`
 function LogoCompany() {
     return (
         <LogoWrapper to="/">
-            <LogoText>HUECHISTKA</LogoText>
+            <LogoText>LEO</LogoText>
         </LogoWrapper>
     )
 }
